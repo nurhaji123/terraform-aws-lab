@@ -1,0 +1,31 @@
+# Terraform state — contains secrets in plaintext
+*.tfstate
+*.tfstate.*
+.terraform/
+.terraform.lock.hcl
+
+# Variable files with real values
+*.tfvars
+*.tfvars.json
+!*.tfvars.example
+
+# Backend config (bucket name reveals account ID)
+backend.hcl
+
+# Build artefacts
+*.zip
+crash.log
+crash.*.log
+
+# Overrides and credentials
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+.terraformrc
+terraform.rc
+*.pem
+*.ppk
+
+# Work in progress
+*.tf.disabled

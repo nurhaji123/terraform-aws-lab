@@ -1,0 +1,10 @@
+# Copy to terraform.tfvars and fill in real values.
+vpc_cidr            = "10.0.0.0/16"
+public_subnet_cidrs = ["10.0.1.0/24", "10.0.2.0/24"]
+availability_zones  = ["us-east-1a", "us-east-1b"]
+
+# Your public IP in CIDR form, e.g. "203.0.113.42/32"
+my_ip = "YOUR.IP.ADDR.HERE/32"
+
+# Supply via TF_VAR_db_password rather than committing a value.
+db_password = "CHANGE_ME"
